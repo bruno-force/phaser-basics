@@ -124,14 +124,20 @@ function build() {
  * Watches for file changes in the 'src' folder.
  */
 function serve(done) {
-  var options = {
+  // var options = {
+  //   server: {
+  //     baseDir: BUILD_PATH
+  //   },
+  //   open: false // Change it to true if you wish to allow Browsersync to open a browser window.
+  // };
+
+  // browserSync(options);
+  browserSync.init({
     server: {
       baseDir: BUILD_PATH
     },
-    open: false // Change it to true if you wish to allow Browsersync to open a browser window.
-  };
-
-  browserSync(options);
+    open: false
+  });
 
   // Watches for changes in files inside the './src' folder.
   gulp.watch(SOURCE_PATH + '/**/*.js', gulp.series(['watch-js']));
@@ -147,14 +153,20 @@ function serve(done) {
   done();
 }
 
+function reloadBrowserSync(done) {
+  console.log('Reloading Browser');
+  browserSync.reload();
+  done();
+}
+
 gulp.task('cleanBuild', gulp.series(cleanBuild));
 gulp.task('copyStatic', gulp.series(['cleanBuild'], copyStatic));
 gulp.task('copyPhaser', gulp.series(['copyStatic'], copyPhaser));
 gulp.task('build', gulp.series(['copyPhaser'], build));
 gulp.task('fastBuild', gulp.series(build));
 gulp.task('serve', gulp.series(['build'], serve));
-gulp.task('watch-js', gulp.series(['fastBuild'], browserSync.reload)); // Rebuilds and reloads the project when executed.
-gulp.task('watch-static', gulp.series(['copyPhaser'], browserSync.reload));
+gulp.task('watch-js', gulp.series(['fastBuild'], reloadBrowserSync)); // Rebuilds and reloads the project when executed.
+gulp.task('watch-static', gulp.series(['copyPhaser'], reloadBrowserSync));
 
 /**
  * The tasks are executed in the following order:

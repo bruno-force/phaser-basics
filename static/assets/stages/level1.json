@@ -1,0 +1,178 @@
+{
+  "height": 7,
+  "infinite": false,
+  "layers": [
+    {
+      "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACsAAAArAAAAKwAAAAAAAAAAAAAAAAAAACsAAAArAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAAAAAAAAAAAAAAAAAADwAAAA8AAAAPAAAADwAAAA8AAAA=",
+      "encoding": "base64",
+      "height": 7,
+      "id": 1,
+      "name": "Platforms",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 14,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAUAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "encoding": "base64",
+      "height": 7,
+      "id": 5,
+      "name": "Water",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 14,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "data": "AAAAAEkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "encoding": "base64",
+      "height": 7,
+      "id": 4,
+      "name": "Decorations",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 14,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 6,
+      "name": "Spikes",
+      "objects": [
+        {
+          "gid": 71,
+          "height": 64,
+          "id": 2,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 576,
+          "y": 384
+        },
+        {
+          "gid": 71,
+          "height": 64,
+          "id": 3,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 640,
+          "y": 384
+        },
+        {
+          "gid": 71,
+          "height": 64,
+          "id": 4,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 448,
+          "y": 256
+        },
+        {
+          "gid": 71,
+          "height": 64,
+          "id": 5,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 64,
+          "y": 192
+        },
+        {
+          "gid": 71,
+          "height": 64,
+          "id": 6,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 320,
+          "y": 384
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 7,
+      "name": "Door",
+      "objects": [
+        {
+          "gid": 92,
+          "height": 64,
+          "id": 7,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 832,
+          "y": 256
+        },
+        {
+          "gid": 78,
+          "height": 64,
+          "id": 8,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 64,
+          "x": 832,
+          "y": 192
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 8,
+  "nextobjectid": 9,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.2.4",
+  "tileheight": 64,
+  "tilesets": [
+    {
+      "columns": 14,
+      "firstgid": 1,
+      "image": "../tilesheets/platform-pack.png",
+      "imageheight": 448,
+      "imagewidth": 896,
+      "margin": 0,
+      "name": "First",
+      "spacing": 0,
+      "tilecount": 98,
+      "tileheight": 64,
+      "tilewidth": 64
+    }
+  ],
+  "tilewidth": 64,
+  "type": "map",
+  "version": 1.2,
+  "width": 14
+}
