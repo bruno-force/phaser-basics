@@ -29,10 +29,6 @@ class Stage extends Phaser.Scene {
       tileset = map.addTilesetImage('First', 'tiles'),
       platforms = map.createStaticLayer('Platforms', tileset, 0, 0);
 
-    console.log(map);
-    console.log(tileset);
-    console.log(platforms);
-
     platforms.setCollisionByExclusion(-1, true);
 
     this.player = new Player({

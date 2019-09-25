@@ -1,8 +1,7 @@
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   constructor(config) {
     super(config.scene, config.x, config.y, config.key);
-    this.scene = config.scene;
-    new config.animations(config.scene, config.key);
+    new config.animations(this.scene, this.texture.key);
   }
 
   addToStage() {
@@ -22,11 +21,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (activeInput.left.isDown || activeInput.a.isDown) {
       this.setVelocityX(-160);
       this.flipX = true;
-      //this.play('walk', true);
+      this.play('walk', true);
     } else if (activeInput.right.isDown || activeInput.d.isDown) {
       this.setVelocityX(160);
       this.flipX = false;
-      //this.play('walk', true);
+      this.play('walk', true);
     } else {
       this.setVelocityX(0);
       this.play('stand', true);
